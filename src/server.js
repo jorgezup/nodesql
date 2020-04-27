@@ -1,6 +1,8 @@
 const express = require('express')
 const routes = require('./routes')
 
+require('./database') /* Importar a conexão */
+
 const app = express()
 
 app.use(express.json())
